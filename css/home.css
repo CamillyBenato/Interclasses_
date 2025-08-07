@@ -47,7 +47,7 @@ html, body{
     color: white;
     padding: 20px;
     border-radius: 8px;
-    letter-spacing: 3px;
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
     text-align: center;
 }
 
@@ -55,6 +55,31 @@ html, body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
     text-align: left; /*Alinha o texto dentro do elemento <p> <div>*/
+    margin-top: -20px;
+}
+
+.data{
+    z-index: 2;
+    position: absolute;
+    font-family: 'Viga', sans-serif;
+    color: rgb(255, 0, 0);
+    margin-top: 230px;
+    margin-right: 840PX;
+    font-size: 20px;
+
+    animation: brilharPiscar 1.5s infinite;
+}
+
+@keyframes brilharPiscar{
+    0%, 100%{
+        opacity: 1;
+        text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 30px rgb(255, 255, 255), 0 0 40px #f0f;
+    } 
+
+    50%{
+        opacity: 0.3;
+        text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 255, 255);
+    }
 }
 
 .menu{
@@ -85,3 +110,11 @@ html, body{
     margin-left: 130px;
 }
 
+#img_introducao{
+    background-image: url('/imagens/como-falar-sobre-esportes-em-espanhol.png');
+    background-position: center;
+}
+
+#futebol-bg { 
+    background-image: url('/imagens/2021-08-07t142855z-624882652-rc2e0p9y7vvp-rtrmadp-3-olympics-2020-fbl-m-team11-fnl-000100.webp');
+}
