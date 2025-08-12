@@ -111,10 +111,24 @@ html, body{
 }
 
 #img_introducao{
-    background-image: url('/imagens/como-falar-sobre-esportes-em-espanhol.png');
+    background-image: url('/imagens/Esportes.png');
     background-position: center;
 }
 
 #futebol-bg { 
-    background-image: url('/imagens/2021-08-07t142855z-624882652-rc2e0p9y7vvp-rtrmadp-3-olympics-2020-fbl-m-team11-fnl-000100.webp');
+    background-image: url('/imagens/Brasil.jpg');
+}
+
+.descricao{
+    z-index: 2;
+    background-color: rgb(196, 195, 196);
+    border: 2px solid #000000;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
