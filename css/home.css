@@ -110,25 +110,82 @@ html, body{
     margin-left: 130px;
 }
 
+/* Imagens de Fundo*/
+
 #img_introducao{
     background-image: url('/imagens/Esportes.png');
     background-position: center;
 }
 
 #futebol-bg { 
-    background-image: url('/imagens/Brasil.jpg');
+    background-image: url('/imagens/SeleçãoBrasileira1.webp');
 }
 
+#volei_slide{
+    background-image: url('/imagens/sfv.jpg');
+}
+
+/* Imagens de Fundo*/
+
+
 .descricao{
+    position: relative;
     z-index: 2;
-    background-color: rgb(196, 195, 196);
-    border: 2px solid #000000;
-    width: 300px;
-    height: 200px;
-    display: flex;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-color: rgba(0,0,0,0.5);
+    color: rgb(201, 198, 198);
+    padding: 60px;
+    width: 750px;
+    height: 400px;
+    display: inline-block;
     justify-content: center; /* centraliza na horizontal */
     align-items: center; /* centraliza na vertical */
-    text-align: center;
     font-family: 'Viga', sans-serif;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.descricao1{
+    position: absolute;
+    bottom: 60px;
+    left: 950px;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    color: rgb(201, 198, 198);
+    padding: 60px;
+    width: 750px;
+    height: 400px;
+    display: inline-block;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.voleibol{
+    position: relative;
+    top: 290px;
+    font-family: 'Viga', sans-serif;
+    color: white;
+    z-index: 2;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
+    left: 200px;
+}
+
+.descricao_volei{
+    position: relative;
+    top: 300px;
+    font-family: 'Viga', sans-serif;
+    color: rgb(201, 198, 198);
+    z-index: 2;
+    left: 200px;
+    font-size: 25px;
+}
+
+.img_des{
+    
 }
