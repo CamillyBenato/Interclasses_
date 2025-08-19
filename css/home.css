@@ -27,7 +27,7 @@ html, body{
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -110,6 +110,32 @@ html, body{
     margin-left: 130px;
 }
 
+.aapm{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    width: fit-content;
+    z-index: 2;
+}
+
+.aapm img {
+  width: 70px; 
+  height: auto;
+}
+
+.aapm span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff; 
+  font-family: 'Josefin Sans', sans-serif; 
+}
+
 /* Imagens de Fundo*/
 
 #img_introducao{
@@ -125,6 +151,17 @@ html, body{
     background-image: url('/imagens/sfv.jpg');
 }
 
+#futsal_slide{
+    background-image: url('/imagens/futsal.jpg');
+}
+
+#basquete_slide{
+    background-image: url('/imagens/basquete.webp');
+}
+
+#tenisdemesa_slide{
+    background-image: url('/imagens/tenisdemesa.webp');
+}
 /* Imagens de Fundo*/
 
 
@@ -186,6 +223,327 @@ html, body{
     font-size: 25px;
 }
 
-.img_des{
-    
+.img_inscreva {
+    position: absolute;   
+    width: 600px;         /* largura do card */
+    margin-top: 50px;     /* ajusta a posição vertical */
+    left: 1100px;          /* ajusta a posição horizontal */
+    z-index: 2;
+    height:650px;
+
+    background-color: rgba(0,0,0,0.6);
+    padding: 130px;
+    border-radius: 80px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    top: 60px;
+}
+
+.img_inscreva img {
+    position: relative;
+    width: 600px; /*largura*/
+    right: 130px; 
+    /*border-radius: 80px; /* deixa os cantos arredondados */
+    border-radius: 80px 80px 0px 0px;
+    display: block;
+    top: -130px;
+    background-position: top;
+}
+
+.btn-inscreva {
+    display: inline-block;
+    position: absolute;
+    background-color: #e30613; /* vermelho */
+    color: white;
+    font-family: 'Viga', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 25px;
+    border-radius: 10px;
+    margin-top: -50px;       /* espaço entre img e botão */
+    transition: 0.3s ease;
+    right: 200px; 
+}
+
+.btn-inscreva:hover {
+    background-color: #ff0000; 
+    transform: scale(1.05);    /* cresce ao passar o mouse */
+}
+
+.futsal-titulo {
+    position: relative;
+    font-family: 'Viga', sans-serif;
+    color: white;
+    z-index: 2;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
+    top: 220px; 
+    left: 200px;
+
+}
+
+.descricao_futsal{
+    position: relative;
+    top: 300px;
+    font-family: 'Viga', sans-serif;
+    color: rgb(201, 198, 198);
+    z-index: 2;
+    left: 200px;
+    font-size: 25px;
+}
+
+.img_inscreva1 {
+    position: absolute;   
+    width: 600px;         /* largura do card */
+    margin-top: 50px;     /* ajusta a posição vertical */
+    left: 1100px;          /* ajusta a posição horizontal */
+    z-index: 2;
+    height:650px;
+
+    background-color: rgba(0,0,0,0.6);
+    padding: 130px;
+    border-radius: 80px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    top: 60px;
+}
+
+.img_inscreva1 img {
+    position: relative;
+    width: 600px; /*largura*/
+    right: 130px; 
+    /*border-radius: 80px; /* deixa os cantos arredondados */
+    border-radius: 80px 80px 0px 0px;
+    display: block;
+    top: -130px;
+    background-position: top;
+}
+
+.basquete-titulo {
+    position: relative;
+    font-family: 'Viga', sans-serif;
+    color: white;
+    z-index: 2;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
+    top: 220px; 
+    left: 200px;
+
+}
+
+.descricao_basquete{
+    position: relative;
+    top: 300px;
+    font-family: 'Viga', sans-serif;
+    color: rgb(201, 198, 198);
+    z-index: 2;
+    left: 200px;
+    font-size: 25px;
+}
+
+.img_inscreva2 {
+    position: absolute;   
+    width: 600px;         /* largura do card */
+    margin-top: 50px;     /* ajusta a posição vertical */
+    left: 1100px;          /* ajusta a posição horizontal */
+    z-index: 2;
+    height:650px;
+
+    background-color: rgba(0,0,0,0.6);
+    padding: 130px;
+    border-radius: 80px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    top: 60px;
+}
+
+.img_inscreva2 img {
+    position: relative;
+    width: 600px; /*largura*/
+    right: 130px; 
+    /*border-radius: 80px; /* deixa os cantos arredondados */
+    border-radius: 80px 80px 0px 0px;
+    display: block;
+    top: -130px;
+    background-position: top;
+}
+
+.tenisdemesa-titulo {
+    position: relative;
+    font-family: 'Viga', sans-serif;
+    color: white;
+    z-index: 2;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px; /*Espaçamento entre as letras*/
+    top: 220px; 
+    left: 200px;
+
+}
+
+.descricao_tenisdemesa{
+    position: relative;
+    top: 300px;
+    font-family: 'Viga', sans-serif;
+    color: rgb(201, 198, 198);
+    z-index: 2;
+    left: 200px;
+    font-size: 25px;
+}
+
+.img_inscreva3 {
+    position: absolute;   
+    width: 600px;         /* largura do card */
+    margin-top: 50px;     /* ajusta a posição vertical */
+    left: 1100px;          /* ajusta a posição horizontal */
+    z-index: 2;
+    height:650px;
+
+    background-color: rgba(0,0,0,0.6);
+    padding: 130px;
+    border-radius: 80px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    top: 60px;
+}
+
+.img_inscreva3 img {
+    position: relative;
+    width: 600px; /*largura*/
+    right: 130px; 
+    /*border-radius: 80px; /* deixa os cantos arredondados */
+    border-radius: 80px 80px 0px 0px;
+    display: block;
+    top: -130px;
+    background-position: top;
+}
+
+
+.cadastro{       
+    width: 100vw;     
+    height: 100vh;        /* Altura total da tela */
+    display: flex;        /* Para alinhar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1a1a;
+    font-family: 'Viga', sans-serif;
+    font-size: 20px;
+    color: white; 
+    z-index: 2;
+    position: relative;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.cadastro input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  z-index: 2;
+  position: relative;
+}
+
+.cadastre-se {
+    font-size: 90px;
+    font-weight: bold; /*negrito*/
+    text-transform: uppercase; /*deixar maiúsculo*/
+    margin-bottom: 10px;
+    text-align: right;
+    top: 60px;
+    display: flex;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.subtituloFormulario{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 40px;
+    display: block;
+    z-index: 2;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.textField {
+    justify-content: center; 
+    background: #1c1a1a;
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    z-index: 2;
+    position: relative;
+}
+
+.textField p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #ddd;
+  z-index: 2;
+  position: relative;
+}
+
+.username,
+.email,
+.senha,
+input[type="text"],
+input[type="email"],
+input[type="passaword"]{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #d3d3d3; 
+  font-size: 16px;
+  z-index: 2;
+  position: relative;
+}
+
+.botao {
+  margin-top: 20px;
+  padding: 20px 20px;
+  background: red;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+  justify-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.botao:hover {
+  background: #b30000;
+}
+
+.titulo-forms { 
+    display: flex;
+    flex-direction: column;
+}
+
+.aapm-titulo{
+    font-family: 'Viga', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-top: 20px;
 }

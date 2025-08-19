@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <section class="galery centro" id="img_introducao">
@@ -19,7 +21,11 @@
         <div class="titulo">INTERCLASSES 2025
             <p class="subtitulo"> <span style="color: #FF0000;">SENAI</span> Gaspar Ricardo Jr.</p>
         </div>
-        <div class="data">16 e 23 de agosto</div>         
+        <div class="data">16 e 23 de agosto</div>     
+        <div class="aapm">
+            <img src="/imagens/aapm-removebg-preview.png" alt="AAPM">
+            <span>AAPM</span>
+        </div>    
     </section>
 
 
@@ -31,10 +37,90 @@
     <section class="galery volei" id="volei_slide">
         <div class="voleibol">VOLEIBOL</div>
         <div class="descricao_volei">Vibre em cada ponto com uma bola de <br>vôlei. A leveza e o toque preciso são suas <br>ferramentas para o levantamento perfeito <br>e a cortada espetacular que garante o <br>ponto.</div>
-        <div class="img_des">
-            <img src="/imagens/sfv.jpg">
+        <div class="img_inscreva">
+            <img src="/imagens/sfv.jpg" alt="Voleibol">
+            <button class="btn-inscreva" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'});">
+                INSCREVA - SE
+            </button>
         </div>
     </section>
 
+    <section class="galery futsal" id="futsal_slide">
+        <div class="futsal-titulo">FUTSAL</div>
+        <div class="descricao_futsal">Sinta a velocidade e a precisão do futsal <br>com uma bola de futsal. O ritmo é intenso, <br>o espaço é pequeno, e a cada toque, a <br>chance de um gol memorável aumenta, <br>elevando a paixão pela partida.</div>
+        <div class="img_inscreva1">
+            <img src="/imagens/futsal.jpg" alt="Futsal">
+            <button class="btn-inscreva" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'});">
+                INSCREVA - SE
+            </button>
+        </div>
+    </section>
+
+    <section class="galery basquete" id="basquete_slide">
+        <div class="basquete-titulo">BASQUETE</div>
+        <div class="descricao_basquete">Sinta a emoção da quadra com a bola de <br>basquete. Cada dible é a busca pelo <br>controle, e cada arremesso é a energia que <br>te leva a dominar o jogo e alcançar a <br>vitória.</div>
+        <div class="img_inscreva2">
+            <img src="/imagens/basquete.webp" alt="Basquete">
+            <button class="btn-inscreva" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'});">
+                INSCREVA - SE
+            </button>
+        </div>
+    </section>
+
+    <section class="galery tenisdemesa" id="tenisdemesa_slide">
+        <div class="tenisdemesa-titulo">TÊNIS DE MESA</div>
+        <div class="descricao_tenisdemesa">Sinta a velocidade e a precisão do futsal <br>com uma bola de futsal. O ritmo é intenso, <br>o espaço é pequeno, e a cada toque, a <br>chance de um gol memorável aumenta, <br>elevando a paixão pela partida.</div>
+        <div class="img_inscreva3">
+            <img src="/imagens/tenisdemesa.webp" alt="Tênis de Mesa">
+            <button class="btn-inscreva" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'});">
+                INSCREVA - SE
+            </button>
+        </div>
+    </section>
+
+    <!--CADASTRO-->
+
+    <section class="galery cadastro" id="formulario">
+        <div class="forms">  
+            <div class="titulo-forms">
+                <h1 class="cadastre-se">FORMULÁRIO DE INSCRIÇÃO</h1>
+                <div class="subtituloFormulario">Inscreva-se Já e Venha Fazer Parte dessa Festa!</div>
+            </div>
+
+            <div>
+            <form class="textField" method="post">
+
+                <label for="username">Nome Completo <span style="color:red">*</span></label>
+                <input class="Nome" type="text" placeholder="Nome..." name="username">
+                <br><br>
+
+                <label for="telefone">Telefone <span style="color:red">*</span></label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                <br><br>
+
+                <label for="email">E-mail <span style="color:red">*</span></label>
+                <input class="email" type="email" placeholder="Email..." name="email">
+                <br><br>
+
+                <label for="senha">Senha <span style="color:red">*</span></label>
+                <input class="senha" type="password" placeholder="Senha..." name="senha">
+                <br><br>
+
+                <label for="time">Time <span style="color:red">*</span></label> 
+                <input type="text" id="time" name="time" placeholder="Digite sua equipe">
+                <br><br>
+
+                <input class="botao" type="submit" value="Enviar inscrição">
+                <br>
+            </form>
+            </div>
+        </div>  
+    </section>
+
+    <section class="galery beneficios_aapm" id="aapm_slide">
+        <div class="aapm-titulo">ASSOCIADO AAPM: Só Vantagens para Você!</div>
+        <div class="descricao_aapm">SUPER BENEFÍCIOS DE SER ASSOCIADO DA AAPM <br> Wi-Fi liberado na escola - Internet rápida e gratuita pra estudar, pesquisar... ou dar <br>aquela checada no Insta! <br>Passeios irados – Visitas, eventos e viagens organizadas com apoio da AAPM. Diversão <br>garantida! <br>Brindes exclusivos – Camisetas, mochilas, materiais e outros mimos que só quem é <br>associado recebe! <br>Melhorias reais na escola – Salas mais equipadas, espaços mais confortáveis, <br>investimentos em estrutura! <br>Apoio em projetos escolares – Feiras, eventos, concursos... a AAPM tá junto pra <br>fortalecer cada ideia! <br>Incentivo à educação – Contribui para atividades que tornam o aprendizado mais leve, <br>moderno e criativo. <br>Mais voz nas decisões – Associados têm mais representatividade nas escolhas <br>importantes da escola. <br>Canal direto com a AAPM – Dúvidas, sugestões ou ideias? Quem é associado é ouvido <br>de verdade!</div>
+    </section>
+    
 </body>
 </html>
