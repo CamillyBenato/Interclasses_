@@ -91,7 +91,7 @@
             <form class="textField" method="post">
 
                 <label for="username">Nome Completo <span style="color:red">*</span></label>
-                <input class="Nome" type="text" placeholder="Nome..." name="username">
+                <input class="nome" type="text" placeholder="Nome..." name="username">
                 <br><br>
 
                 <label for="telefone">Telefone <span style="color:red">*</span></label>
@@ -110,6 +110,16 @@
                 <input type="text" id="time" name="time" placeholder="Digite sua equipe">
                 <br><br>
 
+                <label for="modalidade">Modalidade <span style="color:red">*</span></label> 
+                <select id="modalidade" name="modalidade" required>
+                    <option value="" disabled selected hidden>Selecione um modalidade</option>
+                    <option value="Futsal">Futsal</option>
+                    <option value="Volei">Vôlei</option>
+                    <option value="Basquete">Basquete</option>
+                    <option value="Tenis de mesa">Tenis de mesa</option>
+                </select>
+                <br><br>
+
                 <input class="botao" type="submit" value="Enviar inscrição">
                 <br>
             </form>
@@ -117,10 +127,77 @@
         </div>  
     </section>
 
+    <!--JS FORMULARIO-->
+    <script>
+    document.getElementById("formulario").addEventListener("submit", function(e) {
+        e.preventDefault(); // impede envio automático
+
+        // Pega valores
+        let nome = document.querySelector(".nome").value.trim();
+        let telefone = document.getElementById("telefone").value.trim();
+        let email = document.querySelector(".email").value.trim();
+        let senha = document.querySelector(".senha").value.trim();
+        let time = document.getElementById("time").value.trim();
+        let modalidade = document.getElementById("modalidade").value.trim();
+
+
+        // Validação 
+        if (!nome || !telefone || !email || !senha || !time || !modalidade) {
+            alert("Preencha todos os campos obrigatórios!");
+            return;
+        }
+
+        console.log("Nome:", nome);
+        console.log("Telefone:", telefone);
+        console.log("E-mail:", email);
+        console.log("Senha:", senha);
+        console.log("Time:", time);
+        console.log("Modalidade:", modalidade);
+
+        fetch("URL_DO_BACKEND", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ nome, telefone, email, senha, time, modalidade })
+        }).then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.error(err));
+        
+        
+        alert("Formulário enviado com sucesso!");
+});
+    </script>
+
+    <!--JS MODALIDADE-->
+    <script>
+    document.getElementById("formulario").addEventListener("submit", function(e) {
+        e.preventDefault(); // impede envio automático
+
+        let modalidade = document.getElementById("modalidade").value;
+
+        if (modalidade === "") {
+            alert("Por favor, selecione uma modalidade!");
+            return;
+        }
+
+        alert("Formulário enviado com sucesso! Modalidade escolhida: " + modalidade);
+
+    });
+    </script>
+
     <section class="galery beneficios_aapm" id="aapm_slide">
-        <div class="aapm-titulo">ASSOCIADO AAPM: Só Vantagens para Você!</div>
-        <div class="descricao_aapm">SUPER BENEFÍCIOS DE SER ASSOCIADO DA AAPM <br> Wi-Fi liberado na escola - Internet rápida e gratuita pra estudar, pesquisar... ou dar <br>aquela checada no Insta! <br>Passeios irados – Visitas, eventos e viagens organizadas com apoio da AAPM. Diversão <br>garantida! <br>Brindes exclusivos – Camisetas, mochilas, materiais e outros mimos que só quem é <br>associado recebe! <br>Melhorias reais na escola – Salas mais equipadas, espaços mais confortáveis, <br>investimentos em estrutura! <br>Apoio em projetos escolares – Feiras, eventos, concursos... a AAPM tá junto pra <br>fortalecer cada ideia! <br>Incentivo à educação – Contribui para atividades que tornam o aprendizado mais leve, <br>moderno e criativo. <br>Mais voz nas decisões – Associados têm mais representatividade nas escolhas <br>importantes da escola. <br>Canal direto com a AAPM – Dúvidas, sugestões ou ideias? Quem é associado é ouvido <br>de verdade!</div>
+        <div class="aapm-titulo">ASSOCIADO <span style="color:#F0474E">A</span><span style="color:#FECF39">A</span><span style="color:#00A54F">P</span><span style="color:#00B3DB">M</span></div>
+        <div class="aapm-subtitulo">Só Vantagens para Você!</div>
+        <div class="descricao_aapm">Wi-Fi liberado na escola - Internet rápida e gratuita pra estudar, pesquisar... ou dar <br>aquela checada no Insta! <br>Passeios irados – Visitas, eventos e viagens organizadas com apoio da AAPM. Diversão <br>garantida! <br>Brindes exclusivos – Camisetas, mochilas, materiais e outros mimos que só quem é <br>associado recebe! <br>Melhorias reais na escola – Salas mais equipadas, espaços mais confortáveis, <br>investimentos em estrutura! <br>Apoio em projetos escolares – Feiras, eventos, concursos... a AAPM tá junto pra <br>fortalecer cada ideia! <br>Incentivo à educação – Contribui para atividades que tornam o aprendizado mais leve, <br>moderno e criativo. <br>Mais voz nas decisões – Associados têm mais representatividade nas escolhas <br>importantes da escola. <br>Canal direto com a AAPM – Dúvidas, sugestões ou ideias? Quem é associado é ouvido <br>de verdade!</div>
     </section>
+
+    <footer class="rodape">
+        <img src="/imagens/pin-de-localizacao (2).png" alt="">Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP</img>
+        <img src="/imagens/chamada-telefonica.png" alt="">(15) 3212-7400</img>
+        <img src="/imagens/instagram (1).png" alt=""><a href="https://www.instagram.com/senaisorocaba/" target="_blank"></a></img>
+            Instagram
+        </a>
+    </footer>
     
 </body>
+
 </html>

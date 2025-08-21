@@ -162,6 +162,10 @@ html, body{
 #tenisdemesa_slide{
     background-image: url('/imagens/tenisdemesa.webp');
 }
+
+#aapm_slide{
+    background-image: url('/imagens/Fundo\ AAPM.png');
+}
 /* Imagens de Fundo*/
 
 
@@ -301,7 +305,6 @@ html, body{
     left: 1100px;          /* ajusta a posição horizontal */
     z-index: 2;
     height:650px;
-
     background-color: rgba(0,0,0,0.6);
     padding: 130px;
     border-radius: 80px;
@@ -351,7 +354,6 @@ html, body{
     left: 1100px;          /* ajusta a posição horizontal */
     z-index: 2;
     height:650px;
-
     background-color: rgba(0,0,0,0.6);
     padding: 130px;
     border-radius: 80px;
@@ -401,7 +403,6 @@ html, body{
     left: 1100px;          /* ajusta a posição horizontal */
     z-index: 2;
     height:650px;
-
     background-color: rgba(0,0,0,0.6);
     padding: 130px;
     border-radius: 80px;
@@ -412,9 +413,8 @@ html, body{
 
 .img_inscreva3 img {
     position: relative;
-    width: 600px; /*largura*/
+    width: 600px; 
     right: 130px; 
-    /*border-radius: 80px; /* deixa os cantos arredondados */
     border-radius: 80px 80px 0px 0px;
     display: block;
     top: -130px;
@@ -424,7 +424,7 @@ html, body{
 
 .cadastro{       
     width: 100vw;     
-    height: 100vh;        /* Altura total da tela */
+    height: 115vh;        /* Altura total da tela */
     display: flex;        /* Para alinhar o conteúdo */
     justify-content: center;
     align-items: center;
@@ -442,10 +442,11 @@ html, body{
     align-items: center;
     gap: 20px;
     width: 100%;
+    
 }
 
 .cadastro input {
-  width: 300px;
+  width: 500px;
   padding: 10px;
   margin: 10px 0;
   font-size: 16px;
@@ -481,36 +482,40 @@ html, body{
 .textField {
     justify-content: center; 
     background: #1c1a1a;
-    padding: 30px 40px;
+    padding: 0px 60px;
     border-radius: 10px;
-    max-width: 600px;
     z-index: 2;
     position: relative;
 }
 
 .textField p {
   font-size: 14px;
-  margin-bottom: 25px;
   color: #ddd;
   z-index: 2;
   position: relative;
 }
 
-.username,
-.email,
-.senha,
-input[type="text"],
-input[type="email"],
-input[type="passaword"]{
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  background: #d3d3d3; 
-  font-size: 16px;
-  z-index: 2;
-  position: relative;
+form.textField input[type="text"],
+form.textField input[type="email"],
+form.textField input[type="password"],
+form.textField select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
 }
+
+#modalidade:invalid {
+  color: #999; /* cinza, tipo placeholder */
+}
+
+#modalidade option {
+  color: #000; /* opções normais pretas */
+}
+
 
 .botao {
   margin-top: 20px;
@@ -539,11 +544,61 @@ input[type="passaword"]{
 }
 
 .aapm-titulo{
+    top: 50px;
     font-family: 'Viga', sans-serif;
     color: white;
-    font-size: 80px;
+    font-size: 90px;
     text-align: center;
     z-index: 2;
     position: relative;
-    margin-top: 20px;
+}
+
+.aapm-subtitulo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    margin-left: 590px;
+    top: 30px;
+}
+
+.descricao_aapm{
+    position: relative;
+    top: 100px;
+    width: 400px;
+    margin: 0 auto;
+    
+    z-index: 2;
+    position: relative;
+    top: 100px;
+
+    width: 400px;              
+    padding: 20px;             
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);               
+    border: 2px solid #4e4949;    
+    border-radius: 10px;    
+    font-family: 'Josefin Sans', sans-serif;   
+}
+
+#aapm_slide::before {
+    content: none; /* remove o overlay */
+}
+
+.rodape {
+  background-color: #222; /* fundo escuro */
+  color: #fff;            /* cor do texto */
+  text-align: center;     /* centraliza o conteúdo */
+  padding: 15px;          /* espaço interno */
+  width: 100%;            /* ocupa toda a largura */
+  height: 25%;
+  flex-direction: column;
+  position: relative;  /* fixa na tela */
+  bottom: 0;        /* gruda embaixo */
+  left: 0;          /* alinhado à esquerda */
+  top: auto;        /* garante que não vá para cima */
+  z-index: 999;
+  align-items: center;
+  display: flex;
 }
