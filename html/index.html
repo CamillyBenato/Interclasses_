@@ -8,12 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/js/ligacao.js">
 
 </head>
 <body>
+
     <section class="galery centro" id="img_introducao">
         <div class="menu"> 
             <img src="/imagens/Menu.png">
+            <nav class="menu-opcoes" >
+                <button onclick="document.getElementById('volei_slide').scrollIntoView({behavior:'smooth'});">Voleibol</button>
+                <button onclick="document.getElementById('futsal_slide').scrollIntoView({behavior:'smooth'});">Futsal</button>
+                <button onclick="document.getElementById('basquete_slide').scrollIntoView({behavior:'smooth'});">Basquete</button>
+                <button onclick="document.getElementById('tenisdemesa_slide').scrollIntoView({behavior:'smooth'});">Tênis de Mesa</button>
+                <button onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'});">Formulário de Inscrição</button>
+                <button onclick="document.getElementById('aapm_slide').scrollIntoView({behavior:'smooth'});">Associado AAPM</button>
+            </nav>
         </div>
         <div class="senai">
             <img src="/imagens/logo-senai.fw_.png">
@@ -185,18 +195,29 @@
     </script>
 
     <section class="galery beneficios_aapm" id="aapm_slide">
-        <div class="aapm-titulo">ASSOCIADO <span style="color:#F0474E">A</span><span style="color:#FECF39">A</span><span style="color:#00A54F">P</span><span style="color:#00B3DB">M</span></div>
-        <div class="aapm-subtitulo">Só Vantagens para Você!</div>
-        <div class="descricao_aapm">Wi-Fi liberado na escola - Internet rápida e gratuita pra estudar, pesquisar... ou dar <br>aquela checada no Insta! <br>Passeios irados – Visitas, eventos e viagens organizadas com apoio da AAPM. Diversão <br>garantida! <br>Brindes exclusivos – Camisetas, mochilas, materiais e outros mimos que só quem é <br>associado recebe! <br>Melhorias reais na escola – Salas mais equipadas, espaços mais confortáveis, <br>investimentos em estrutura! <br>Apoio em projetos escolares – Feiras, eventos, concursos... a AAPM tá junto pra <br>fortalecer cada ideia! <br>Incentivo à educação – Contribui para atividades que tornam o aprendizado mais leve, <br>moderno e criativo. <br>Mais voz nas decisões – Associados têm mais representatividade nas escolhas <br>importantes da escola. <br>Canal direto com a AAPM – Dúvidas, sugestões ou ideias? Quem é associado é ouvido <br>de verdade!</div>
+        <div class="aapm-titulo"><span style="color:rgb(0, 118, 187)">ASSOCIADO </span><span style="color:#F0474E">A</span><span style="color:#FECF39">A</span><span style="color:#00A54F">P</span><span style="color:#00B3DB">M</span></div>
+        <div class="aapm-subtitulo"><span style="color: rgb(0, 118, 187);">Só Vantagens para Você!</span> </div>
+        <div class="descricao_aapm"><span style="color:#F0474E">*</span> Wi-Fi liberado na escola - Internet rápida e gratuita pra estudar, pesquisar... ou dar aquela checada no Insta! <br><br><span style="color:#FECF39">*</span> Passeios irados – Visitas, eventos e viagens organizadas com apoio da AAPM. Diversão garantida! <br><br><span style="color:#00A54F">*</span> Brindes exclusivos – Camisetas, mochilas, materiais e outros mimos que só quem é associado recebe! <br><br><span style="color:#00B3DB">*</span> Melhorias reais na escola – Salas mais equipadas, espaços mais confortáveis, investimentos em estrutura! <br><br><span style="color:#F0474E">*</span> Apoio em projetos escolares – Feiras, eventos, concursos... a AAPM tá junto pra fortalecer cada ideia! <br><br><span style="color:#FECF39">*</span> Incentivo à educação – Contribui para atividades que tornam o aprendizado mais leve, moderno e criativo. <br><br><span style="color:#00A54F">*</span> Mais voz nas decisões – Associados têm mais representatividade nas escolhas importantes da escola. <br><br><span style="color:#00B3DB">*</span> Canal direto com a AAPM – Dúvidas, sugestões ou ideias? Quem é associado é ouvido de verdade!</div>
+        <div class="foto1">
+            <img src="/imagens/espacoaapm.jpeg">
+        </div>
     </section>
 
     <footer class="rodape">
-        <img src="/imagens/pin-de-localizacao (2).png" alt="">Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP</img>
-        <img src="/imagens/chamada-telefonica.png" alt="">(15) 3212-7400</img>
-        <img src="/imagens/instagram (1).png" alt=""><a href="https://www.instagram.com/senaisorocaba/" target="_blank"></a></img>
-            Instagram
-        </a>
-    </footer>
+        <div class="footer-item1">
+            <img src="/imagens/pin-de-localizacao (2).png" alt="">
+            <span>Praça Roberto Mange, R. Santa Rosália, 30, Sorocaba - SP</span>
+        </div>
+        <div class="footer-item">
+            <img src="/imagens/chamada-telefonica.png" alt="">
+            <span>(15) 3212-7400</span>
+        </div>
+        <div class="footer-item">
+            <img src="/imagens/instagram (1).png" alt=""> 
+            <a class="instagram-link" href="https://www.instagram.com/senaisorocaba/" target="_blank">Instagram</a>
+        </div>
+</footer>
+
     
 </body>
 

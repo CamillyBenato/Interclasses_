@@ -82,18 +82,48 @@ html, body{
     }
 }
 
-.menu{
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+.menu { 
+    z-index: 2; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+} 
 
-.menu img{
-    width: 70px;
-    height: auto;
-    margin-top: 40px;
-    margin-left: 40px;
+.menu img { 
+    width: 70px; 
+    height: auto; 
+    margin-top: 40px; 
+    margin-left: 40px; 
+    cursor: pointer; 
+} 
+
+.menu-opcoes { 
+    display: none; 
+    flex-direction: column; 
+    margin-top: 10px; 
+    gap: 10px; 
+} 
+
+.menu:hover .menu-opcoes { 
+    display: flex; 
+} 
+
+.menu-opcoes button { 
+    background-color: #FF0000; 
+    color: white; 
+    font-family: 'Viga', 
+    sans-serif; 
+    font-size: 16px; 
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+} 
+
+.menu-opcoes button:hover { 
+    background-color: #000000; 
+    transform: scale(1.05); 
 }
 
 .senai{
@@ -165,6 +195,10 @@ html, body{
 
 #aapm_slide{
     background-image: url('/imagens/Fundo\ AAPM.png');
+}
+
+#formulario{
+    background-image: url('/imagens/img4.formulario.jpg');
 }
 /* Imagens de Fundo*/
 
@@ -317,7 +351,6 @@ html, body{
     position: relative;
     width: 600px; /*largura*/
     right: 130px; 
-    /*border-radius: 80px; /* deixa os cantos arredondados */
     border-radius: 80px 80px 0px 0px;
     display: block;
     top: -130px;
@@ -366,7 +399,6 @@ html, body{
     position: relative;
     width: 600px; /*largura*/
     right: 130px; 
-    /*border-radius: 80px; /* deixa os cantos arredondados */
     border-radius: 80px 80px 0px 0px;
     display: block;
     top: -130px;
@@ -465,6 +497,7 @@ html, body{
     color: white;
     z-index: 2;
     position: relative;
+    letter-spacing: 3px;
 }
 
 .subtituloFormulario{
@@ -551,6 +584,7 @@ form.textField select {
     text-align: center;
     z-index: 2;
     position: relative;
+    letter-spacing: 3px;
 }
 
 .aapm-subtitulo{
@@ -559,37 +593,44 @@ form.textField select {
     color: white;
     z-index: 2;
     position: relative;
-    margin-left: 590px;
+    margin-left: 565px;
     top: 30px;
 }
 
 .descricao_aapm{
     position: relative;
-    top: 100px;
-    width: 400px;
-    margin: 0 auto;
+    margin: 0 350px;
     
     z-index: 2;
     position: relative;
     top: 100px;
 
-    width: 400px;              
-    padding: 20px;             
+    width: 600px;              
+    padding: 40px;             
     background-color: #ffffff; 
-    color: rgb(0, 0, 0);               
-    border: 2px solid #4e4949;    
+    color: rgb(0, 118, 187);               
+    border: 2px solid #67a2c9;    
     border-radius: 10px;    
     font-family: 'Josefin Sans', sans-serif;   
+    font-size: 20px;
 }
 
 #aapm_slide::before {
     content: none; /* remove o overlay */
 }
 
+.foto1 img {
+    width: 300px;   
+    height: auto;   
+    display: block; /* remove espaçamento em linha */
+    margin: 0 auto; /* centraliza horizontalmente dentro da div */
+    border-radius: 360px;
+}
+
 .rodape {
-  background-color: #222; /* fundo escuro */
-  color: #fff;            /* cor do texto */
-  text-align: center;     /* centraliza o conteúdo */
+  background-color: #222; 
+  color: #fff;           
+  text-align: center;     
   padding: 15px;          /* espaço interno */
   width: 100%;            /* ocupa toda a largura */
   height: 25%;
@@ -601,4 +642,29 @@ form.textField select {
   z-index: 999;
   align-items: center;
   display: flex;
+  gap: 10px;
 }
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaço entre ícone e texto */
+}
+
+.footer-item1 {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.footer-item img {
+    width: 24px;  /* ajusta o tamanho do ícone */
+    height: 24px;
+}
+
+.instagram-link {
+    color: inherit; /* mantém a cor do texto pai */
+    text-decoration: none; /* remove sublinhado */
+}
+
