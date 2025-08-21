@@ -625,6 +625,30 @@ form.textField select {
     display: block; /* remove espaçamento em linha */
     margin: 0 auto; /* centraliza horizontalmente dentro da div */
     border-radius: 360px;
+    left: 1200px;
+    margin-top: -500PX;
+    position: absolute;
+}
+
+.foto2 img {
+    width: 300px;   
+    height: auto;   
+    display: block; /* remove espaçamento em linha */
+    margin: 0 auto; /* centraliza horizontalmente dentro da div */
+    border-radius: 360px;
+    left: 1200px;
+    margin-top: -260PX;
+    position: absolute;
+}
+.foto3 img {
+    width: 300px;   
+    height: auto;   
+    display: block; /* remove espaçamento em linha */
+    margin: 0 auto; /* centraliza horizontalmente dentro da div */
+    border-radius: 360px;
+    left: 1200px;
+    margin-top: -20PX;
+    position: absolute;
 }
 
 .rodape {
