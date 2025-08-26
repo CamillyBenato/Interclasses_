@@ -168,36 +168,36 @@ html, body{
 /* Imagens de Fundo*/
 
 #img_introducao{
-    background-image: url('/imagens/Esportes.png');
+    background-image: url('/static/imagens/Esportes.png');
     background-position: center;
 }
 
 #futebol-bg { 
-    background-image: url('/imagens/SeleçãoBrasileira1.webp');
+    background-image: url('/static/imagens/SeleçãoBrasileira1.webp');
 }
 
 #volei_slide{
-    background-image: url('/imagens/sfv.jpg');
+    background-image: url('/static/imagens/sfv.jpg');
 }
 
 #futsal_slide{
-    background-image: url('/imagens/futsal.jpg');
+    background-image: url('/static/imagens/futsal.jpg');
 }
 
 #basquete_slide{
-    background-image: url('/imagens/basquete.webp');
+    background-image: url('/static/imagens/basquete.webp');
 }
 
 #tenisdemesa_slide{
-    background-image: url('/imagens/tenisdemesa.webp');
+    background-image: url('/static/imagens/tenisdemesa.webp');
 }
 
 #aapm_slide{
-    background-image: url('/imagens/Fundo\ AAPM.png');
+    background-image: url('/static/imagens/Fundo\ AAPM.png');
 }
 
 #formulario{
-    background-image: url('/imagens/img4.formulario.jpg');
+    background-image: url('/static/imagens/img4.formulario.jpg');
 }
 /* Imagens de Fundo*/
 

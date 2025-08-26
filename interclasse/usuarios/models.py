@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.core.validators import RegexValidator
 from django.contrib.auth.hashers import make_password
@@ -8,7 +9,7 @@ class Modalidade(models.Model):
     def __str__(self):
         return self.nome
 
-class Usuario(models.Model):
+class Usuarios(models.Model):
     nome = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     senha = models.CharField(max_length=128)  # para armazenar hash
@@ -25,6 +26,3 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.nome
-
-
-# Create your models here.
